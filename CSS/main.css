@@ -1,1 +1,39 @@
-/*# sourceMappingURL=main.css.map */
+body {
+  background: url("../assets/bg-image.svg");
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  display: grid;
+  gap: 1.5rem 2rem;
+  grid-template-columns: repeat(4, 1fr);
+  width: -moz-fit-content;
+  width: fit-content;
+  max-height: -moz-fit-content;
+  max-height: fit-content;
+  margin: 1rem;
+}
+
+.card {
+  min-width: 15rem;
+  max-height: 30rem;
+  background-color: #6D67D0;
+  border-radius: 0.6rem;
+}
+.card#today {
+  height: 100vh;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+.card#week {
+  width: 100%;
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start: 2;
+}/*# sourceMappingURL=main.css.map */
