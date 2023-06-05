@@ -1,4 +1,8 @@
-$primary-color: #6D67D0;
+$card-background: #6D67D0;
+$primaty-text: #fff;
+$secundary-text: #C2BFF4;
+$subtitle-text: #DAD8F7;
+$details: #DAD8F7;
 
 body{
     background: url("../assets/bg-image.svg");
@@ -12,7 +16,7 @@ body{
 @mixin card-base(){
     min-width: 15rem;
     max-height: 30rem;
-    background-color: $primary-color;
+    background-color: $card-background;
     border-radius: .6rem;
 }
 
@@ -29,6 +33,10 @@ body{
     @include card-base();
 
     &#today{
+        background: url("../assets/now-info-bg.svg");
+        object-fit: cover;
+        background-repeat: no-repeat;
+
         height: 100vh;
         grid-column-start: 1;
         grid-column-end: 3;

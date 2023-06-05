@@ -25,6 +25,10 @@ body {
   border-radius: 0.6rem;
 }
 .card#today {
+  background: url("../assets/now-info-bg.svg");
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-repeat: no-repeat;
   height: 100vh;
   grid-column-start: 1;
   grid-column-end: 3;
